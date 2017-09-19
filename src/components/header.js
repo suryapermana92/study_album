@@ -8,4 +8,5 @@ const Header = () => {
 	return <Text>Albums!</Text>;
 };
 
+// Add comment
 export default Header
