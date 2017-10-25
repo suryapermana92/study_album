@@ -1,16 +1,20 @@
-// index.android.js - place code in here for IOS
-
+// index.android.js - place code in here for IOS!!
 
 // Import a library to help create a component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { AppRegistry, View } from 'react-native';
+import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
 // Create a component
-const App = function () {
-  return <Text> Some Text </Text>
-}
-  
+const App = () => (
+  <View style={{ flex:1}}>
+  <Header headerText={'Albums'} />
+  <AlbumList />
+  </View>
+)
+
 
 // Render it to the device
 
-AppRegistry.RegisterCompenent('albums', () => App)
+AppRegistry.registerComponent('albums', () => App);
